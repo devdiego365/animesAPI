@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
+    <title>Meus Animes Web App</title>
+</head>
+<body onload="carregarAnimes()">
+    <h1>Animes web app</h1>
+    <div>
+        <h2>Adicionar Anime</h2>
+        <input type="text" id="novoAnime">
+        <button onclick="procurarAnimePeloId()">Procurar</button>
+    </div>
+    <div>
+        <h2>Consultar Anime Pelo Id</h2>
+        <input type="text" id="idBuscado">
+        <button onclick="procurarAnimePeloId()">Procurar</button>
+        <p id="AnimeBuscado"></p>
+    </div>
+    <div>
+        <h2>Listar Anime</h2>
+        <button onclick="carregarAnimes()">Listar</button>
+        <ul id ="animes"></ul>
+    </div>
+    <div>
+        <h2>Atualizar Anime</h2>
+        <input type="number" id="idAtualizar">
+        <input type="text" id="conteudoAtualizado">
+        <button onclick="atualizarAnimePeloId">Atualizar</button>
+        <p id="statusAtualizacao"></p>
+    </div>
+    <div>
+        <h2>Remover Anime</h2>
+    </div>
+</body>
+</html>
